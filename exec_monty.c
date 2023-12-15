@@ -8,17 +8,13 @@
  * @text: line of code to be executed
  *
  * Return: 0 success.
+ */
 
 int exec_monty(char *text, stack_t **stack, unsigned int count, FILE *file)
 {
 	instruction_t compare[] = {
 		{"push", mpush},
 		{"pall", mpall},
-		/* {"pint", mpint}, */
-		/* {"pop", mpop}, */
-		/* {"swap", mswap}, */
-		/* {"add", madd}, */
-		/* {"nop", mnop}, */
 		{NULL, NULL}
 	};
 	char *code;

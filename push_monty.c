@@ -1,7 +1,7 @@
 #include "monty.h"
 
 /**
- * mpush: pushes an element to the stack
+ * mpush - pushes an element to the stack
  * @h: head
  * @count: line count or line number
  * Return: nothing.
@@ -25,13 +25,13 @@ void mpush(stack_t **h, unsigned int count)
 	for (i = 0; variable.argvalue[i]; i++)
 	{
 		if (variable.argvalue[i] > '9' || variable.argvalue[i] < '0')
-			{
-				fprintf(stderr, "L%d: usage: push integer\n", count);
-				fclose(variable.file);
-				free(variable.text);
-				free_stack(*h);
-				exit(EXIT_FAILURE);
-			}
+		{
+			fprintf(stderr, "L%d: usage: push integer\n", count);
+			fclose(variable.file);
+			free(variable.text);
+			free_stack(*h);
+			exit(EXIT_FAILURE);
+		}
 	}
 	num = atoi(variable.argvalue);
 
