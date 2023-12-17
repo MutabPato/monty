@@ -15,8 +15,8 @@ int main(int argc, char *argv[])
 	FILE *file;
 	stack_t *stack = NULL;
 	size_t len = 0;
-	ssize_t read;
-	char *text;
+	ssize_t read = 1;
+	char *text = NULL;
 	unsigned int count = 0;
 
 	file = check_monty(argc, argv);
