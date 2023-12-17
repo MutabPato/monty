@@ -38,7 +38,7 @@ int exec_monty(char *text, stack_t **stack, unsigned int count, FILE *file)
 	}
 	if (code && compare[i].opcode == NULL)
 	{
-		fprintf(stderr, "L%d: unkown instruction %s\n", count, code);
+		fprintf(stderr, "L%u: unkown instruction %s\n", count, code);
 		fclose(file);
 		free(text);
 		free_stack(*stack);
