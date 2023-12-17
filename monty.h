@@ -62,6 +62,8 @@ void mpop(stack_t **h, unsigned int count);
 void mpall(stack_t **h, unsigned int count);
 void mpint(stack_t **h, unsigned int count);
 void mswap(stack_t **h, unsigned int count);
+void madd(stack_t **h, unsigned int count);
+void mnop(stack_t **h, unsigned int count);
 void free_stack(stack_t *h);
 void add_node_end(stack_t **h, int n);
 void add_node(stack_t **h, int n);
