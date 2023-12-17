@@ -16,6 +16,7 @@ int exec_monty(char *text, stack_t **stack, unsigned int count, FILE *file)
 		{"push", mpush},
 		{"pall", mpall},
 		{"pint", mpint},
+		{"pop", mpop},
 		{NULL, NULL}
 	};
 	char *code;

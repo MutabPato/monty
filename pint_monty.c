@@ -1,5 +1,12 @@
 #include "monty.h"
 
+/**
+ * mpint - prints the value at the top of the stack
+ * @h: head
+ * @count: line number
+ * Return: nothing.
+ */
+
 void mpint(stack_t **h, unsigned int count)
 {
 	if (*h == NULL)
